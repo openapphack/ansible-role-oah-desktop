@@ -1,2 +1,4 @@
 ---
-#remove oah-shell
+- name: purge ubuntu-desktop
+  shell: >
+    apt-get purge ubuntu-desktop

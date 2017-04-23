@@ -1,4 +1,8 @@
 ---
-#remove oah-shell
+- name: purge ubuntu-desktop
+  shell: >
+    apt-get purge ubuntu-desktop
 
-#install oah-shell
+- name: install ubuntu-desktop
+  shell: >
+  sudo apt-get install --no-install-recommends ubuntu-desktop

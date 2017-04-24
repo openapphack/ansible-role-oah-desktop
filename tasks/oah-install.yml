@@ -1,6 +1,6 @@
 ---
 - debug:
-    msg: "oah-intall"
+    msg: "oah-intalln in oah.desktop"
 - name: install ubuntu-desktop
   shell: >
   sudo apt-get install --no-install-recommends ubuntu-desktop

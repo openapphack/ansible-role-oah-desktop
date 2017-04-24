@@ -1,4 +1,6 @@
 ---
+- debug:
+    msg: "oah-remove of oah.desktop"
 - name: purge ubuntu-desktop
   shell: >
     apt-get purge ubuntu-desktop

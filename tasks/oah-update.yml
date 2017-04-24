@@ -1,2 +1,4 @@
 ---
+- debug:
+    msg: "oah-update of oah.desktop"
 # Self update oah-shell based on VERSION or brute if the force update config is set to true

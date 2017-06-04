@@ -1,5 +1,13 @@
 ---
 - debug:
     msg: "oah-install of oah.desktop"
+
 - name: install ubuntu-desktop
-  shell: sudo apt-get install -y --no-install-recommends ubuntu-desktop
+  shell: >sudo apt-get install -y --no-install-recommends ubuntu-desktop
+  when: oah_desktop == full-desktop
+
+- name: install ubuntu-desktop
+  shell: >
+   sudo apt install xorg
+   sudo apt install --no-install-recommends openbox
+  when: oah_desktop == minimal
